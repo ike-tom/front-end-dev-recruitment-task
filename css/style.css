@@ -1,0 +1,70 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    width: 1343px;
+    height: 635px;
+}
+
+.hero {
+    padding-top: 180px;
+    padding-left: 70px;
+}
+
+.hero__subheader {
+    margin: 0;
+    color: #5b6bb9;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.hero__header {
+    width: 75%;
+    margin-top: 6px;
+    margin-bottom: 0;
+    color: #182370;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+}
+
+.hero__header--blue {
+    color: #284df8;
+}
+
+.hero__description {
+    width: 75%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: #5b6bb9;
+    line-height: 1.7rem;
+}
+
+.hero__cta-button {
+    height: 37px;
+    width: 85px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #fe9f27;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+}
+
+.feature {
+    width: 289px;
+    background-color: blue;
+}
