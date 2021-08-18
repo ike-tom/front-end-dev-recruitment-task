@@ -12,8 +12,12 @@ html, body {
 
 .main {
     display: flex;
+    position: absolute;
     width: 1343px;
     height: 635px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* END OF COMMON */
@@ -51,9 +55,9 @@ html, body {
 .hero__description {
     width: 85%;
     margin-top: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     color: #5b6bb9;
-    line-height: 1.7rem;
+    line-height: 28px;
     word-spacing: 1px;
 }
 
@@ -87,11 +91,15 @@ html, body {
     margin-right: 25px;
 }
 
+.feature__container--offset {
+    margin-top: 25px;
+}
+
 .feature {
     position: relative;
     width: 285px;
     height: 235px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     border: solid 1px #dcdbdc;
     border-radius: 3px;
     background-color: white;
@@ -110,8 +118,10 @@ html, body {
     top: 81px;
     left: 25px;
     margin: 0;
+    color: #182370;
     font-size: 20px;
     line-height: 31px;
+    word-spacing: 1px;
 }
 
 .feature__description {
@@ -119,12 +129,10 @@ html, body {
     top: 137px;
     left: 25px;
     width: 90%;
+    color: #5c6cb9;
     font-size: 14px;
     line-height: 20px;
-}
-
-.feature__container--offset {
-    margin-top: 25px;
+    word-spacing: 1px;
 }
 
 /* END OF FEATURES */
