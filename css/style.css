@@ -1,5 +1,13 @@
 /* COMMON */
 
+:root {
+    --bold-text-color: #182370;
+    --regular-text-color: #5b6bb9;
+    --border-color: #dcdbdc;
+    --button-color: #fe9f27;
+    --highlight-color: #284df8;
+}
+
 html, body {
     min-height: 100vh;
     margin: 0;
@@ -32,7 +40,7 @@ html, body {
 
 .hero__subheader {
     margin: 0;
-    color: #5b6bb9;
+    color: var(--regular-text-color);
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -42,21 +50,21 @@ html, body {
     width: 80%;
     margin-top: 6px;
     margin-bottom: 0;
-    color: #182370;
+    color: var(--bold-text-color);
     font-size: 3rem;
     line-height: 3.5rem;
     font-weight: 500;
 }
 
 .hero__header--blue {
-    color: #284df8;
+    color: var(--highlight-color);
 }
 
 .hero__description {
     width: 85%;
     margin-top: 18px;
     margin-bottom: 16px;
-    color: #5b6bb9;
+    color: var(--regular-text-color);
     line-height: 28px;
     word-spacing: 1px;
 }
@@ -67,7 +75,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     color: white;
     letter-spacing: 1px;
-    background-color: #fe9f27;
+    background-color: var(--button-color);
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -75,7 +83,7 @@ html, body {
 }
 
 .hero__cta-button:hover {
-    background-color: #284df8;
+    background-color: var(--highlight-color);
 }
 
 /* END OF HERO */
@@ -100,7 +108,7 @@ html, body {
     width: 285px;
     height: 235px;
     margin-bottom: 23px;
-    border: solid 1px #dcdbdc;
+    border: solid 1px var(--border-color);
     border-radius: 3px;
     background-color: white;
 }
@@ -118,7 +126,7 @@ html, body {
     top: 81px;
     left: 25px;
     margin: 0;
-    color: #182370;
+    color: var(--bold-text-color);
     font-size: 20px;
     line-height: 31px;
     word-spacing: 1px;
@@ -129,7 +137,7 @@ html, body {
     top: 137px;
     left: 25px;
     width: 90%;
-    color: #5c6cb9;
+    color: var(--regular-text-color);
     font-size: 14px;
     line-height: 20px;
     word-spacing: 1px;
@@ -137,10 +145,10 @@ html, body {
 
 /* END OF FEATURES */
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
     .main {
         width: 100vw;
-        height: auto;
+        height: fit-content;
         flex-direction: column;
         align-items: center;
     }
@@ -157,7 +165,7 @@ html, body {
         position: static;
         margin: 0 auto;
         width: 100vw;
-        height: auto;
+        height: fit-content;
         transform: none;
     }
     .hero {
